@@ -13,11 +13,7 @@ In the above example, `-N` is the number of nodes,
 `-n` the number of cores, and `-t` the run time.
 [slurm]: slurm-scheduler.md
 
-Option `-A <account>` specifies your paid credit account or allocation;
-to run under the open queue, use `-A open`. 
-
-Once salloc starts, you can run compute-intensive jobs 
-interactively on your resources.
+Option `-A or --account <account>` specifies your paid credit account or allocation;
 
 To request an interactive job with a GPU, under a credit account use
 
@@ -27,7 +23,7 @@ salloc -A <account> -p standard --gres=gpu:1 ...
 
 Under a paid allocation (that includes GPU nodes), use `-p sla-prio`.
 
-For more details, see [Hardware requests](hardware-requests.md).
+For more details, see [Hardware requests](resource-requests.md).
 
 !!!warning "GPUs are only available to paid accounts."
 	To request GPUs for an interactive job,

@@ -49,6 +49,18 @@ Firefox is also available via `ssh -X`, after loading its module with
 `module load firefox`.   
 From the command line, execute `firefox`.
 
+Users may need to set the default browser manually using either:
+
+- in their .bashrc file: 
+```bash
+BROWSER=/storage/icds/tools/sw/firefox/firefox 
+```
+
+- In an Interactive Desktop session, Applications > Settings > Settings Manager, then select Default Applications. Under the Internet tab, there is a field for Web Browser. Firefox is located at /storage/icds/tools/sw/firefox/firefox
+
+!!! note "Using Firefox in Interactive Desktops"
+    When using Firefox within an Interactive Desktop session, the operating system may ask for a path when you attempt to save or upload files. You can navigate to your storage directories using paths like `/storage/home/<username>` or `/storage/work/<username>`.
+
 ## Globus
 
 Globus is a web-based tool designed for robust transfers of large files.
